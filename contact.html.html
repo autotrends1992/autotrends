@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & Enquiry | Auto Trends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+<!-- NAVBAR -->
+<nav class="bg-white border-b">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-2xl font-bold">
+      Auto<span class="text-red-600">Trends</span>
+    </div>
+    <div class="space-x-6 font-medium">
+      <a href="index.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="text-red-600">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTACT & ENQUIRY -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h1 class="text-3xl font-bold text-center mb-16">Contact & Enquiry</h1>
+
+  <div class="grid md:grid-cols-2 gap-12">
+
+    <!-- CONTACT INFO -->
+<div class="space-y-6">
+
+  <!-- Call Us -->
+  <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-red-100 text-red-600">
+      📞
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-800">Call Us</h4>
+      <p class="text-gray-600">+91 98988 97776</p>
+    </div>
+  </div>
+
+  <!-- Email -->
+  <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600">
+      ✉️
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-800">Email</h4>
+      <p class="text-gray-600">contact@autotrends.in</p>
+    </div>
+  </div>
+
+  <!-- Address -->
+  <div class="flex items-center gap-4 bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+    <div class="w-12 h-12 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+      📍
+    </div>
+    <div>
+      <h4 class="font-semibold text-gray-800">Address</h4>
+      <p class="text-gray-600">
+        Surat, Gujarat – 395007
+      </p>
+    </div>
+  </div>
+
+</div>
+
+
+    <!-- ENQUIRY FORM -->
+    <div class="bg-white p-8 rounded-2xl shadow">
+      <h2 class="text-xl font-bold mb-6">Enquiry Form</h2>
+
+      <form class="space-y-4">
+        <input class="w-full p-3 border rounded-lg" placeholder="Customer Name" required>
+        <input class="w-full p-3 border rounded-lg" placeholder="Contact Number" required>
+        <input class="w-full p-3 border rounded-lg" placeholder="Email ID">
+
+        <select id="brand" onchange="updateModels()" class="w-full p-3 border rounded-lg" required>
+          <option value="">Select Car Brand</option>
+        </select>
+
+        <select id="model" class="w-full p-3 border rounded-lg" required>
+          <option value="">Select Model</option>
+        </select>
+
+        <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold">
+          Submit Enquiry
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- MEET OUR TEAM -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-14">
+    Meet Our <span class="text-red-600">Team</span>
+  </h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+    <!-- Team Card -->
+    <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+      
+      <!-- Image -->
+      <div class="relative overflow-hidden">
+        <img
+          src="assets/team/ceo.jpg"
+          alt="Founder & CEO"
+          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
+        >
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+          <a href="#" class="text-white text-xl hover:text-red-500 transition">🌐</a>
+          <a href="#" class="text-white text-xl hover:text-red-500 transition">💼</a>
+          <a href="#" class="text-white text-xl hover:text-red-500 transition">📷</a>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="p-6 text-center">
+        <h4 class="font-semibold text-lg">Rahul Patel</h4>
+        <p class="text-gray-500 text-sm">Founder & CEO</p>
+      </div>
+    </div>
+
+    <!-- Team Card -->
+    <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+      <div class="relative overflow-hidden">
+        <img
+          src="assets/team/manager.jpg"
+          alt="Sales Manager"
+          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+          <a href="#" class="text-white text-xl hover:text-red-500">💼</a>
+          <a href="#" class="text-white text-xl hover:text-red-500">📷</a>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h4 class="font-semibold text-lg">Amit Shah</h4>
+        <p class="text-gray-500 text-sm">Sales Manager</p>
+      </div>
+    </div>
+
+    <!-- Team Card -->
+    <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+      <div class="relative overflow-hidden">
+        <img
+          src="assets/team/sales1.jpg"
+          alt="Sales Executive"
+          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+          <a href="#" class="text-white text-xl hover:text-red-500">📞</a>
+          <a href="#" class="text-white text-xl hover:text-red-500">✉️</a>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h4 class="font-semibold text-lg">Neha Desai</h4>
+        <p class="text-gray-500 text-sm">Sales Executive</p>
+      </div>
+    </div>
+
+    <!-- Team Card -->
+    <div class="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+      <div class="relative overflow-hidden">
+        <img
+          src="assets/team/sales2.jpg"
+          alt="Customer Support"
+          class="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
+        >
+        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+          <a href="#" class="text-white text-xl hover:text-red-500">📞</a>
+          <a href="#" class="text-white text-xl hover:text-red-500">✉️</a>
+        </div>
+      </div>
+      <div class="p-6 text-center">
+        <h4 class="font-semibold text-lg">Rohit Mehta</h4>
+        <p class="text-gray-500 text-sm">Customer Support</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- JAVASCRIPT -->
+<script>
+const carModels = {
+ Maruti: [ "Alto K10", "S-Presso", "Celerio", "Swift", "Baleno",  "Wagon R", "Dzire", "Brezza", "Ertiga",  "XL6", "Ciaz", "Fronx", "Grand Vitara", "Invicto"],
+Hyundai: ["Grand i10 Nios", "i20", "Aura", "Venue", "Venue N Line", "Creta", "Creta N Line", "Alcazar", "Verna", "Tucson",  "Ioniq 5"],
+Tata: ["Tiago", "Tiago EV", "Tigor", "Tigor EV", "Punch", "Punch EV", "Altroz", "Nexon", "Nexon EV",  "Harrier", "Safari"],
+Mahindra: [ "Bolero", "Bolero Neo", "Scorpio Classic", "Scorpio N", "XUV700", "Thar", "Thar Roxx", "XUV 3XO"],
+Honda: ["Amaze", "City", "City Hybrid", "Elevate"],
+Toyota: ["Glanza", "Urban Cruiser Taisor", "Rumion", "Innova Crysta", "Innova Hycross", "Fortuner", "Fortuner Legender", "Camry"],
+Kia: ["Sonet", "Sonet N Line", "Seltos", "Seltos X-Line", "Carens", "Carnival", "EV6"],
+MG: ["Comet EV", "Astor", "Hector", "Hector Plus", "ZS EV", "Gloster"],
+Skoda: ["Kushaq", "Slavia", "Kodiaq"],
+Volkswagen: ["Taigun", "Virtus", "Tiguan"],
+Renault: ["Kwid", "Triber", "Kiger"],
+Nissan: ["Magnite"],
+Jeep: ["Compass", "Meridian"],
+Citroen: ["C3", "eC3", "C3 Aircross"],
+BMW: ["2 Series", "3 Series", "5 Series", "X1", "X3", "X5", "X7", "i4", "iX"],
+Mercedes: ["A-Class", "C-Class", "E-Class", "GLA", "GLC", "GLE", "S-Class", "EQB", "EQE", "EQS"],
+Audi: ["A4", "A6", "Q3", "Q5", "Q7", "Q8", "RS e-tron GT"],
+Volvo: ["XC40", "XC60", "XC90", "C40 Recharge"],
+Lexus: ["ES", "NX", "RX", "LX"],
+Jaguar: ["F-Type", "F-Pace"],
+LandRover: ["Range Rover", "Range Rover Sport", "Range Rover Velar", "Range Rover Evoque", "Defender", "Discovery"],
+Porsche: ["Macan", "Cayenne", "Panamera", "911", "Taycan"],
+Mini: ["Cooper SE", "Countryman"],
+Isuzu: ["V-Cross", "MU-X"]
+
+};
+
+const brandSelect = document.getElementById("brand");
+const modelSelect = document.getElementById("model");
+
+// Populate brands
+Object.keys(carModels).forEach(brand => {
+  const option = document.createElement("option");
+  option.value = brand;
+  option.textContent = brand;
+  brandSelect.appendChild(option);
+});
+
+function updateModels() {
+  modelSelect.innerHTML = '<option value="">Select Model</option>';
+  const models = carModels[brandSelect.value];
+  if (models) {
+    models.forEach(model => {
+      const opt = document.createElement("option");
+      opt.value = model;
+      opt.textContent = model;
+      modelSelect.appendChild(opt);
+    });
+  }
+}
+</script>
+
+</body>
+</html>
